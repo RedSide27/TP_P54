@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="T_Equipes" msprop:Generator_TableClassName="T_EquipesDataTable" msprop:Generator_TableVarName="tableT_Equipes" msprop:Generator_TablePropName="T_Equipes" msprop:Generator_RowDeletingName="T_EquipesRowDeleting" msprop:Generator_RowChangingName="T_EquipesRowChanging" msprop:Generator_RowEvHandlerName="T_EquipesRowChangeEventHandler" msprop:Generator_RowDeletedName="T_EquipesRowDeleted" msprop:Generator_UserTableName="T_Equipes" msprop:Generator_RowChangedName="T_EquipesRowChanged" msprop:Generator_RowEvArgName="T_EquipesRowChangeEvent" msprop:Generator_RowClassName="T_EquipesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Equ_no" msprop:Generator_ColumnVarNameInTable="columnEqu_no" msprop:Generator_ColumnPropNameInRow="Equ_no" msprop:Generator_ColumnPropNameInTable="Equ_noColumn" msprop:Generator_UserColumnName="Equ_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Equ_Nom" msprop:Generator_ColumnVarNameInTable="columnEqu_Nom" msprop:Generator_ColumnPropNameInRow="Equ_Nom" msprop:Generator_ColumnPropNameInTable="Equ_NomColumn" msprop:Generator_UserColumnName="Equ_Nom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Equ_Ville" msprop:Generator_ColumnVarNameInTable="columnEqu_Ville" msprop:Generator_ColumnPropNameInRow="Equ_Ville" msprop:Generator_ColumnPropNameInTable="Equ_VilleColumn" msprop:Generator_UserColumnName="Equ_Ville">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lig_no" msprop:Generator_ColumnVarNameInTable="columnLig_no" msprop:Generator_ColumnPropNameInRow="Lig_no" msprop:Generator_ColumnPropNameInTable="Lig_noColumn" msprop:Generator_UserColumnName="Lig_no" type="xs:int" />
+              <xs:element name="Equ_Logo" msprop:Generator_ColumnVarNameInTable="columnEqu_Logo" msprop:Generator_ColumnPropNameInRow="Equ_Logo" msprop:Generator_ColumnPropNameInTable="Equ_LogoColumn" msprop:Generator_UserColumnName="Equ_Logo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:T_Equipes" />
+      <xs:field xpath="mstns:Equ_no" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -66,6 +66,7 @@ Public Class Calendrier
 
     Public Sub Placer_Jours(d1 As Date, Ligue As String)
         Try
+            PartieJour.Ligue = Ligue
             Dim cn As New SqlConnection("Data Source=.;Initial Catalog=p54_Calendrier;Integrated Security=True")
             cn.Open()
             mois = d1.Month

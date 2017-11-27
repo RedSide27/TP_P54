@@ -4,4 +4,6 @@
     Public NbPartie As Integer
 
     Public mois As Integer
+
+    Public Ligue As String
 End Module

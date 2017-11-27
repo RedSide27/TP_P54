@@ -95,6 +95,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmJournee.Designer.vb">
+      <DependentUpon>frmJournee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmJournee.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Jour.Designer.vb">
       <DependentUpon>Jour.vb</DependentUpon>
     </Compile>
@@ -116,6 +122,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PartieJour.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Calendrier.resx">
@@ -123,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJournee.resx">
+      <DependentUpon>frmJournee.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Jour.resx">
       <DependentUpon>Jour.vb</DependentUpon>

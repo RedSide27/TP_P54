@@ -11,3 +11,17 @@ C:\1716426\P54\Tp2\TP2\obj\Debug\TP2.pdb
 C:\1716426\P54\Tp2\TP2\obj\Debug\TP2.Calendrier.resources
 C:\1716426\P54\Tp2\TP2\obj\Debug\TP2.Jour.resources
 C:\1716426\P54\Tp2\TP2\obj\Debug\TP2.vbprojResolveAssemblyReference.cache
+C:\Alex\P54\TP_P54\TP2\bin\Debug\TP2.exe.config
+C:\Alex\P54\TP_P54\TP2\bin\Debug\TP2.exe
+C:\Alex\P54\TP_P54\TP2\bin\Debug\TP2.pdb
+C:\Alex\P54\TP_P54\TP2\bin\Debug\TP2.xml
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.Calendrier.resources
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.Form1.resources
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.Jour.resources
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.Resources.resources
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.vbproj.GenerateResource.Cache
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.vbproj.CoreCompileInputs.cache
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.exe
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.xml
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.pdb
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.frmJournee.resources

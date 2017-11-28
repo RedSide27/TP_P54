@@ -37,6 +37,7 @@ Partial Class Form1
         Me.SqlSelectCommand3 = New System.Data.SqlClient.SqlCommand()
         Me.daEquipe = New System.Data.SqlClient.SqlDataAdapter()
         Me.Calendrier1 = New TP2.Calendrier()
+        Me.optEquipe = New System.Windows.Forms.CheckBox()
         CType(Me.SportBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Ds1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TEquipesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,12 +96,14 @@ Partial Class Form1
         Me.cboEquipe.DataSource = Me.TEquipesBindingSource
         Me.cboEquipe.DisplayMember = "Equ_Nom"
         Me.cboEquipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboEquipe.Enabled = False
         Me.cboEquipe.FormattingEnabled = True
         Me.cboEquipe.Location = New System.Drawing.Point(564, 5)
         Me.cboEquipe.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.cboEquipe.Name = "cboEquipe"
         Me.cboEquipe.Size = New System.Drawing.Size(159, 26)
         Me.cboEquipe.TabIndex = 2
+        Me.cboEquipe.ValueMember = "Equ_no"
         '
         'TEquipesBindingSource
         '
@@ -140,11 +143,22 @@ Partial Class Form1
         Me.Calendrier1.Size = New System.Drawing.Size(1345, 928)
         Me.Calendrier1.TabIndex = 4
         '
+        'optEquipe
+        '
+        Me.optEquipe.AutoSize = True
+        Me.optEquipe.Location = New System.Drawing.Point(730, 8)
+        Me.optEquipe.Name = "optEquipe"
+        Me.optEquipe.Size = New System.Drawing.Size(59, 22)
+        Me.optEquipe.TabIndex = 5
+        Me.optEquipe.Text = "Actif"
+        Me.optEquipe.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1379, 787)
+        Me.Controls.Add(Me.optEquipe)
         Me.Controls.Add(Me.Calendrier1)
         Me.Controls.Add(Me.lblEquipe)
         Me.Controls.Add(Me.cboEquipe)
@@ -159,6 +173,7 @@ Partial Class Form1
         CType(Me.TEquipesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DsEquipes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents SqlSelectCommand1 As SqlClient.SqlCommand
@@ -175,4 +190,5 @@ Partial Class Form1
     Friend WithEvents DsEquipes As DataSet1
     Friend WithEvents TEquipesBindingSource As BindingSource
     Friend WithEvents Calendrier1 As Calendrier
+    Friend WithEvents optEquipe As CheckBox
 End Class

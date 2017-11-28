@@ -25,3 +25,4 @@ C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.exe
 C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.xml
 C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.pdb
 C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.frmJournee.resources
+C:\Alex\P54\TP_P54\TP2\obj\Debug\TP2.vbprojResolveAssemblyReference.cache

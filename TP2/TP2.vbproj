@@ -88,6 +88,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Ds.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DsPartie.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPartie.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +171,17 @@
     </None>
     <None Include="Ds.xss">
       <DependentUpon>Ds.xsd</DependentUpon>
+    </None>
+    <None Include="DsPartie.xsc">
+      <DependentUpon>DsPartie.xsd</DependentUpon>
+    </None>
+    <None Include="DsPartie.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPartie.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsPartie.xss">
+      <DependentUpon>DsPartie.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

@@ -28,7 +28,12 @@ Public Class Form1
                 Case Else
                     Ligue = "LNH"
             End Select
-            Calendrier1.Placer_Jours(Date.Now, Ligue)
+            If optEquipe.Checked = True Then
+                Calendrier1.Placer_Jours("2017-" & PartieJour.mois & "-" & PartieJour.NoJour, Ligue, cboEquipe.SelectedValue)
+            Else
+                Calendrier1.Placer_Jours("2017-" & PartieJour.mois & "-" & PartieJour.NoJour, Ligue, PartieJour.team)
+            End If
+
             daEquipe.Fill(DsEquipes)
             cboEquipe.Items.Clear()
         Catch ex As Exception
@@ -42,5 +47,29 @@ Public Class Form1
         PartieJour.mois = mois
         Dim frm As New frmJournee
         frm.Show()
+    End Sub
+
+    Private Sub cboEquipe_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboEquipe.SelectedIndexChanged
+        Select Case cboSport.SelectedValue
+            Case 1
+                Ligue = "LNH"
+            Case 2
+                Ligue = "MLB"
+            Case 3
+                Ligue = "NFL"
+            Case Else
+                Ligue = "LNH"
+        End Select
+        Calendrier1.Placer_Jours("2017-" & PartieJour.mois & "-" & PartieJour.NoJour, Ligue, cboEquipe.SelectedValue)
+    End Sub
+
+    Private Sub optEquipe_CheckedChanged(sender As Object, e As EventArgs) Handles optEquipe.CheckedChanged
+        If optEquipe.Checked = True Then
+            cboEquipe.Enabled = True
+            Calendrier1.Placer_Jours("2017-" & PartieJour.mois & "-" & PartieJour.NoJour, Ligue, cboEquipe.SelectedValue)
+        ElseIf optEquipe.Checked = False Then
+            cboEquipe.Enabled = False
+            Calendrier1.Placer_Jours("2017-" & PartieJour.mois & "-" & PartieJour.NoJour, Ligue, Ligue)
+        End If
     End Sub
 End Class
